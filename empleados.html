@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+     <head>
+	     <title>Empleados</title>
+	     <meta charset="UFT-8">
+	     <meta name="viewport" content="width=device-width, user-scalable=no,
+	     initial-scale=1,maximum-sacale=1,munumym.scale=1">
+	     <link rel="stylesheet" href="css/estilos.css">
+	 <script type="text/javascript" src="js/validation_empleados.js"></script>
+</head> 
+<body class="body1"> 
+     <form action="index.html" method="post" enctype="text/plain" onsubmit="return validacion_empleados();">
+
+        <h2>Esta es la página para los empleados </h2>
+		<input type="text" placeholder="Ingrese su usuario" name="usuario" id="usuarios">
+	    <input type="date" placeholder="Ingrese su fecha de nacimiento" name="date" id="date">
+	    <select styleid="typeDocument" placeholder="Ingrese su tipo de documento" name="typeDocument" id="typeDocument">
+	    <option value="CC">Cédula de Ciudadanía</option>
+	    <option value="TI">Tarjeta de Identidad</option>
+	    <option value="CE">Cédula de Extranjería</option>
+	    <option value="PS">Pasaporte</option>
+	</select>
+	    <input type="text" placeholder="Ingrese su documento" name="ndocumento" id="ndocumento">
+	    <input type="email" placeholder="Ingrese su e-mail" name="email" id="email">
+
+
+	    <center><a href="menu.html">Volver</a></center>
+		<center><input type="submit" value="Ingresar"><center>
+	</form>
+  </body>
+</html>
